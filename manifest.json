@@ -1,0 +1,16 @@
+{
+  "name": "SvitloBot ESP32-C3",
+  "version": "1.0.1",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        {
+          "path": "firmware/svitlobot-esp32c3-full.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
