@@ -1,0 +1,18 @@
+# SvitloBot Flasher v2 — firmware update 1.0.2
+
+This package contains the updated ESP32-C3 Wi-Fi recovery firmware.
+
+## Files to add/replace in the repository
+
+- `manifest.json` — replace the existing manifest.
+- `firmware/bootloader.bin` — add.
+- `firmware/partitions.bin` — add.
+- `firmware/firmware.bin` — add.
+- `sketch_mar11a_wifi_recovery.ino` — source sketch for reference.
+
+The manifest uses ESP32-C3 flash offsets:
+- bootloader: `0x0000`
+- partition table: `0x8000`
+- application: `0x10000`
+
+Do not leave the old manifest pointing to `svitlobot-esp32c3-full.bin`; the new manifest references the three split binaries.
